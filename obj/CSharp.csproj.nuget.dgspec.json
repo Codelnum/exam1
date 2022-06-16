@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mvpug\\OneDrive\\Рабочий стол\\CSharp-learning\\CSharp\\CSharp.csproj": {}
+    "C:\\Users\\mvpug\\OneDrive\\Рабочий стол\\EXAM1\\exam\\CSharp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mvpug\\OneDrive\\Рабочий стол\\CSharp-learning\\CSharp\\CSharp.csproj": {
+    "C:\\Users\\mvpug\\OneDrive\\Рабочий стол\\EXAM1\\exam\\CSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mvpug\\OneDrive\\Рабочий стол\\CSharp-learning\\CSharp\\CSharp.csproj",
+        "projectUniqueName": "C:\\Users\\mvpug\\OneDrive\\Рабочий стол\\EXAM1\\exam\\CSharp.csproj",
         "projectName": "CSharp",
-        "projectPath": "C:\\Users\\mvpug\\OneDrive\\Рабочий стол\\CSharp-learning\\CSharp\\CSharp.csproj",
+        "projectPath": "C:\\Users\\mvpug\\OneDrive\\Рабочий стол\\EXAM1\\exam\\CSharp.csproj",
         "packagesPath": "C:\\Users\\mvpug\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mvpug\\OneDrive\\Рабочий стол\\CSharp-learning\\CSharp\\obj\\",
+        "outputPath": "C:\\Users\\mvpug\\OneDrive\\Рабочий стол\\EXAM1\\exam\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mvpug\\AppData\\Roaming\\NuGet\\NuGet.Config"
