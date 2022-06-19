@@ -2,36 +2,66 @@
 using static System.Console;
 Clear();
 
-WriteLine("Enter array size"); 
-int size = int.Parse(ReadLine());      
-string[] StrArr = GetArray(size);
-WriteLine("Result array:");
-PrintArray(StrArr);
+WriteLine("Enter max string length");    
+int maxStrLength = int.Parse(ReadLine());
+WriteLine("Enter array size");
+int arrSize = int.Parse(ReadLine()); 
+int sortLength = 3;                                 //отбор по длине строки n.
 
+string [] resultArr = new string [arrSize];
+int count =0;                               //счетчик кол-ва строк <= n и размера итогового массива.
+int j =0;
 
-
-
-void PrintArray(string[]StrArr)
-{
-    for (int i = 0; i < size; i++)
-    {
-        Console.Write($"{StrArr[i]} ");
-    }
-    
-}
-
-
-string[]GetArray(int size)
-{
-    string[]fillArray = new string [size];
-    for(int i = 0; i<size; i++)
-    {
-        WriteLine($"Введите строку {i+1}");
-        string enteredString = ReadLine();
-        if (enteredString.Length <= 3)
+string[]randomArr = new string[arrSize];
+    for (int i = 0; i < arrSize; i++)
+    {   
+        int strLength = new Random().Next(1,maxStrLength);
+        string arrString = new string(GetString(strLength));
+        randomArr[i]= arrString;
+        if(strLength<=sortLength)
         {
-        fillArray[i] = enteredString;
-        }
+            count++;
+            resultArr[j]=randomArr[i];
+            j++;
+        }        
     }
-return fillArray;
+
+WriteLine($"START ARRAY:");
+PrintArray(randomArr,arrSize);
+WriteLine();
+WriteLine();
+
+if(count == 0)
+{
+WriteLine($"В массиве нет строк, соответвующих условию");
 }
+else
+{
+WriteLine($"RESULT ARRAY:");
+PrintArray(resultArr, count);
+}
+
+
+
+void PrintArray(string[]randArr, int arrSize)
+{
+    for (int i = 0; i < arrSize; i++)
+    {
+        Write($"  >{randArr[i]}<  ");
+    }
+    WriteLine();
+}
+
+
+char []GetString(int stringLength)
+{
+    char[]getString = new char [stringLength];
+    for(int i = 0; i<stringLength; i++)
+    {
+        int randSymb = new Random().Next(1,127);
+        char symb = (char)randSymb;
+        getString[i] = symb;
+    }
+return getString;
+}
+
